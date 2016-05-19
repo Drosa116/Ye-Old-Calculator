@@ -1,0 +1,32 @@
+
+
+#frame {
+	width: 15em;
+	height: 20em;
+	padding: 1em;
+	margin: auto;
+	border-radius: 10%;
+	position: relative;
+}
+
+#calculator {
+	width: 15em;
+	height: 20em;
+	padding: 1em;
+	border-radius: 25%;
+	position: absolute;
+	font-family: UnifrakturCook, Arial;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	opacity: 0.85;
+	
+}
+
+#title {
+	position: relative;
+	font-family: UnifrakturCook, Arial;
+	font-size: 80px;
+	color: #916344;
+	margin-left: 200px;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	opacity: 0.85;
+}

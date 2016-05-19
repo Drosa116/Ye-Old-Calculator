@@ -1,0 +1,100 @@
+<!Doctype html>
+<html>
+
+<title>Ye Old Calculator</title>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link href='https://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<body background="images/medieval.jpg">
+
+<h1 id="title">Ye Old Calculator</h1>
+
+<div id="frame"><div id ="calculator">
+	<form name = "form">
+	<input name = "result" style="width:200px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344"></input>
+</br></br>
+	<input type="button" value="1" name="1" onClick="run1()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="2" name="2" onClick="run2()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="3" name="3" onClick="run3()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="+" name="plus" onClick="runplus()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+</br>
+</br>
+	<input type="button" value="4" name="4" onClick="run4()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="5" name="5" onClick="run5()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px;color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="6" name="6" onClick="run6()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="-" name="minus"onClick="runmin()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+</br>
+</br>
+	<input type="button" value="7" name="7" onClick="run7()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="8" name="8" onClick="run8()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="9" name="9" onClick="run9()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="x" name="multiply" onClick="runmult()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+</br>
+</br>
+	<input type="button" value="C" name="clear" onClick="runclear()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="0" name="0" onClick="run0()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="." name="." onClick="rundec()"style="width:50px; background:#916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	<input type="button" value="=" name="cal" onClick="evalu()"style="width:50px; background: #916344; font-family:UnifrakturCook; font-size: 50px; color: #916344; text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000">
+	</form>
+
+	<script>
+		function run1() {
+			document.form.result.value +="1";
+				}
+		function run2() {
+			document.form.result.value +="2";
+				}		
+		function run3() {
+			document.form.result.value +="3";
+				}
+		function runplus() {
+			document.form.result.value +="+";
+				}
+		function run4() {
+			document.form.result.value +="4";
+				}
+		function run5() {
+			document.form.result.value +="5";
+				}
+		function run6() {
+			document.form.result.value +="6";
+				}
+		function runmin() {
+			document.form.result.value +="-";
+				}
+		function run7() {
+			document.form.result.value +="7";
+				}
+		function run8() {
+			document.form.result.value +="8";
+				}
+		function run9() {
+			document.form.result.value +="9";
+				}
+		function runmult() {
+			document.form.result.value +="x";
+				}
+		function runclear() {
+			document.form.result.value +="";
+				}
+		function run0() {
+			document.form.result.value +="0";
+				}
+		function rundec() {
+			document.form.result.value +=".";
+				}
+		
+		function evalu(){
+			var evalo = eval(document.form.result.value)
+			document.form.result.value = evalo;
+				}
+	</script>
+</div></div>
+</body>
+
+</html>
